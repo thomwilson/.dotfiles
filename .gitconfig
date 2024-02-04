@@ -20,3 +20,6 @@
 	autosetupremote = true
 [pretty]
 	brief = format:%C(auto)%h %C(blue)%cn %C(green)%cr %C(auto)%s %d
+[user]
+	name = Thom Wilson
+	email = t.wilson@fourjaw.com
