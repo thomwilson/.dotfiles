@@ -26,6 +26,8 @@ Install the following for everything to work without any need to alter the dotfi
     - [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
     - [Hack Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack)
     - [Gogh](https://github.com/Gogh-Co/Gogh)
+- File search
+    - [Silver Searcher](https://github.com/ggreer/the_silver_searcher)
 - Version Managers
     - [Node Version Manager](https://github.com/nvm-sh/nvm)
     - [Pyenv](https://github.com/pyenv/pyenv)
@@ -45,4 +47,3 @@ Once installed, run the following commands to install all plugins:
 
 - In tmux, press `<prefix> + I`
 - In the vim command line (press `:`), execute `:PlugInstall`
-- `source .zshrc`

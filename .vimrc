@@ -11,8 +11,8 @@
   Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle' }
   :let g:NERDTreeWinSize=45
 
-  Plug 'wincent/command-t'
-  let g:CommandTPreferredImplementation='ruby'
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  Plug 'junegunn/fzf.vim'
 
   " Comments
   Plug 'tpope/vim-commentary'
@@ -49,7 +49,7 @@
   Plug 'nathanaelkane/vim-indent-guides'
   let g:indent_guides_enable_on_vim_startup = 1
   let g:indent_guides_auto_colors = 0
-  autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=232
+  autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=235
   autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=234
 
   " Autocomplete
@@ -115,10 +115,11 @@
   nmap <silent> <Leader>t :TestNearest<CR>
   nmap <silent> <Leader>T :TestFile<CR>
 
-  " <o>pen command T
-  nmap <silent> <Leader>o :CommandT<CR>
+  " <o>pen file search
+  nmap <silent> <Leader>O :Files<CR>
+  nmap <silent> <Leader>o :GFiles<CR>
   " show <b>uffers
-  nmap <silent> <Leader>b :CommandTBuffer<CR>
+  nmap <silent> <Leader>b :Buffers<CR>
 
   " Jump back and forth
   nmap <Leader>[ <C-o><CR>

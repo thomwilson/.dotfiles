@@ -30,6 +30,6 @@ export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
-PATH="$HOME.local/bin:$PATH"
+PATH="$HOME/.local/bin:$PATH"
 
 source <(kubectl completion zsh)
