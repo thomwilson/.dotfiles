@@ -4,12 +4,13 @@ ZSH_THEME="bullet-train"
 
 # Relies on a patched NerdFont
 BULLETTRAIN_PROMPT_CHAR=""
-BULLETTRAIN_DIR_FG="white"
+BULLETTRAIN_DIR_FG="black"
 BULLETTRAIN_NVM_PREFIX=" "
+BULLETTRAIN_NVM_FG="black"
 BULLETTRAIN_VIRTUALENV_PREFIX=" "
 BULLETTRAIN_KCTX_PREFIX="󱃾 "
-BULLETTRAIN_VIRTUALENV_BG="magenta"
-BULLETTRAIN_VIRTUALENV_FG="white"
+BULLETTRAIN_VIRTUALENV_BG="red"
+BULLETTRAIN_VIRTUALENV_FG="black"
 BULLETTRAIN_KCTX_FG="black"
 
 plugins=(git zsh-syntax-highlighting)
@@ -19,7 +20,6 @@ source $ZSH/oh-my-zsh.sh
 alias docker-compose="docker compose"
 
 alias c=clear
-alias %=fg %1
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
 export NVM_DIR="$HOME/.nvm"
@@ -33,3 +33,4 @@ eval "$(pyenv init -)"
 PATH="$HOME/.local/bin:$PATH"
 
 source <(kubectl completion zsh)
+

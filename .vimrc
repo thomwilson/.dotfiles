@@ -89,6 +89,15 @@
 
     augroup END
   endif
+
+  " Open NERDTree on empty
+  function! StartUp()
+    if 0 == argc()
+        NERDTree
+    end
+  endfunction
+
+  autocmd VimEnter * call StartUp()
 " ---
 
 " --- Mappings ---
