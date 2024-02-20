@@ -15,6 +15,7 @@ eval "$(pyenv init --path)"
 
 plugins=(
   git
+  sudo
   zsh-syntax-highlighting
   jira
   kubectl
