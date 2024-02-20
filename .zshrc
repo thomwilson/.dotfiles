@@ -1,17 +1,13 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="bullet-train"
-
-# Relies on a patched NerdFont
-BULLETTRAIN_PROMPT_CHAR=""
-BULLETTRAIN_DIR_FG="black"
-BULLETTRAIN_NVM_PREFIX=" "
-BULLETTRAIN_NVM_FG="black"
-BULLETTRAIN_VIRTUALENV_PREFIX=" "
-BULLETTRAIN_KCTX_PREFIX="󱃾 "
-BULLETTRAIN_VIRTUALENV_BG="red"
-BULLETTRAIN_VIRTUALENV_FG="black"
-BULLETTRAIN_KCTX_FG="black"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
@@ -31,3 +27,5 @@ alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
 PATH="$HOME/.local/bin:$PATH"
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
