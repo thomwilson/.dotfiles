@@ -5,8 +5,9 @@ import = [
 
 [window]
 decorations = "None"
-# opacity = 0.9
+opacity = 0.95
 startup_mode = "Maximized"
+dynamic_title = false
 
 [font]
 normal.family = "Hack Nerd Font"
