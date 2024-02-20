@@ -13,7 +13,18 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
 
-plugins=(git zsh-syntax-highlighting jira kubectl nvm pyenv azure web-search)
+plugins=(
+  git
+  zsh-syntax-highlighting
+  jira
+  kubectl
+  nvm
+  npm
+  pyenv
+  azure
+  web-search
+  fzf
+)
 
 source $ZSH/oh-my-zsh.sh
 
