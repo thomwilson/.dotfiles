@@ -68,8 +68,8 @@
   set nocompatible
   set nomodeline
   set spelllang=en_gb
-  set hlsearch incsearch ignorecase
   set number relativenumber
+  set updatetime=100
 
   " Make the vertical divide a bit less ugly
   highlight VertSplit cterm=NONE
@@ -107,9 +107,6 @@
   nmap <Leader>n :NERDTreeToggle<CR>
   " Show file in NERDTree
   nmap <Leader>s :NERDTreeFind<CR>
-
-  " Clear search term highlight
-  nmap <Leader>c :let @/=""<CR>
 
   nmap <Leader>f :ALEFix<CR>
   nmap <Leader>g :ALEGoToDefinition<CR>
