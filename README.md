@@ -10,16 +10,21 @@ Install the following for everything to work without any need to alter the dotfi
     - [Alacritty](https://github.com/alacritty/alacritty/blob/master/INSTALL.md)
 - Shell look and feel
     - [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
-    - [Hack Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack)
+    - [Hack Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack) (make sure it's installed system-wide)
+- Git enhancers
+    - [Git-Delta](https://github.com/dandavison/delta)
 - File search
+    - [fzf](https://github.com/junegunn/fzf) (this will be automatically installed by the git plugin, so you can skip this one)
     - [Silver Searcher](https://github.com/ggreer/the_silver_searcher)
-- Version Managers
+- Version Managers etc
     - [Node Version Manager](https://github.com/nvm-sh/nvm)
     - [Pyenv](https://github.com/pyenv/pyenv)
 - Linters
     - [Pyright](https://github.com/microsoft/pyright)
     - [Ruff](https://docs.astral.sh/ruff/installation/)
     - [Spectral](https://github.com/stoplightio/spectral)
+- Debuggers
+    - [Vimspector](https://github.com/puremourning/vimspector)
 - Docker
     - [Docker Engine](https://docs.docker.com/engine/install/debian/#install-using-the-repository)
     - [Kubectl](https://github.com/kubernetes/kubectl)
