@@ -21,6 +21,10 @@
   Plug 'dense-analysis/ale'
   let g:ale_completion_enabled = 1
 
+  Plug 'pangloss/vim-javascript'
+  Plug 'leafgarland/typescript-vim'
+  Plug 'peitalin/vim-jsx-typescript'
+
   " Testing
   Plug 'vim-test/vim-test'
   let test#python#runner = 'pytest'
@@ -34,6 +38,7 @@
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-rhubarb'
   Plug 'airblade/vim-gitgutter'
+  let g:gitgutter_sign_priority = 1
 
   "Appearance
   Plug 'vim-airline/vim-airline'
@@ -56,6 +61,10 @@
   Plug 'ervandew/supertab'
   let g:SuperTabDefaultCompletionType = "<c-n>"
 
+  " Navigation
+   Plug 'christoomey/vim-tmux-navigator'
+   Plug 'pbogut/fzf-mru.vim'
+  
   call plug#end()
 " ---
 
@@ -70,6 +79,8 @@
   set spelllang=en_gb
   set number relativenumber
   set updatetime=100
+  set autowriteall
+  set signcolumn=yes
 
   " Make the vertical divide a bit less ugly
   highlight VertSplit cterm=NONE
@@ -117,6 +128,9 @@
   nmap <silent> <Leader>o :GFiles<CR>
   " show <b>uffers
   nmap <silent> <Leader>b :Buffers<CR>
+
+  " Show MRU with FZF
+  nmap <silent> <Leader>m :FZFMru<CR>
 
   " Jump back and forth
   nmap <Leader>[ <C-o><CR>

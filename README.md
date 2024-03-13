@@ -10,6 +10,7 @@ Install the following for everything to work without any need to alter the dotfi
     - [Alacritty](https://github.com/alacritty/alacritty/blob/master/INSTALL.md)
 - Shell look and feel
     - [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
+    - [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
     - [Hack Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack) (make sure it's installed system-wide)
 - Git enhancers
     - [Git-Delta](https://github.com/dandavison/delta)
