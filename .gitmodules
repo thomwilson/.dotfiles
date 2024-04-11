@@ -7,3 +7,6 @@
 [submodule "/home/thom/.oh-my-zsh/custom/themes/powerlevel10k"]
 	path = /home/thom/.oh-my-zsh/custom/themes/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k
+[submodule "/home/thom/.tmux/plugins/tpm"]
+	path = /home/thom/.tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm

@@ -12,8 +12,9 @@ let g:ale_python_pyright_config = {
 \   'analysis': {
 \     'typeCheckingMode': 'off',
 \     'extraPaths': [
-\        '/home/thom/Repos/Repo/CoreLibrary',
-\        '/home/thom/Repos/Repo/WebApp',
+\        '/home/thom/Repos/FourJaw/CoreLibrary',
+\        '/home/thom/Repos/FourJaw/WebApp',
+\        '/home/thom/Repos/FourJaw/Tablet',
 \     ],
 \   }
 \ }

@@ -9,13 +9,19 @@ Install the following for everything to work without any need to alter the dotfi
 - Terminal Emulator
     - [Alacritty](https://github.com/alacritty/alacritty/blob/master/INSTALL.md)
 - Shell look and feel
+    - [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
     - [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
     - [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
     - [Hack Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack) (make sure it's installed system-wide)
+- Taskbar
+    - [Polybar](https://github.com/polybar/polybar)
+- Plugin Managers:
+    - [Vim Plug](https://github.com/junegunn/vim-plug)
+    - [Tmux Plugins](https://github.com/tmux-plugins/tpm) (Installed through git modules if you clone this as instructed below)
 - Git enhancers
     - [Git-Delta](https://github.com/dandavison/delta)
 - File search
-    - [fzf](https://github.com/junegunn/fzf) (this will be automatically installed by the git plugin, so you can skip this one)
+    - [fzf](https://github.com/junegunn/fzf)
     - [Silver Searcher](https://github.com/ggreer/the_silver_searcher)
 - Version Managers etc
     - [Node Version Manager](https://github.com/nvm-sh/nvm)

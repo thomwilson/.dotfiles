@@ -3,12 +3,12 @@
   call plug#begin()
 
   " File browsing/searching
-  Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
-  let NERDTreeShowHidden=1
+  Plug 'preservim/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
+  let NERDTreeFindHidden=1
 
-  Plug 'ryanoasis/vim-devicons', { 'on': 'NERDTreeToggle' }
-  Plug 'tiagofumo/vim-nerdtree-syntax-highlight', { 'on': 'NERDTreeToggle' }
-  Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreeToggle' }
+  Plug 'ryanoasis/vim-devicons', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
+  Plug 'tiagofumo/vim-nerdtree-syntax-highlight', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
+  Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
   :let g:NERDTreeWinSize=45
 
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -57,6 +57,13 @@
   autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=235
   autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=234
 
+  Plug 'junegunn/goyo.vim'
+  Plug 'junegunn/limelight.vim'
+  let g:limelight_conceal_ctermfg = 'gray'
+  let g:limelight_conceal_ctermfg = 240
+  autocmd! User GoyoEnter Limelight
+  autocmd! User GoyoLeave Limelight!
+
   " Autocomplete
   Plug 'ervandew/supertab'
   let g:SuperTabDefaultCompletionType = "<c-n>"
@@ -81,6 +88,11 @@
   set updatetime=100
   set autowriteall
   set signcolumn=yes
+
+  " Set temp file directories to avoid them being littered inline
+  set backupdir=.backup/,~/.backup/,/tmp//
+  set directory=.swp/,~/.swp/,/tmp//
+  set undodir=.undo/,~/.undo/,/tmp//
 
   " Make the vertical divide a bit less ugly
   highlight VertSplit cterm=NONE
@@ -118,6 +130,9 @@
   nmap <Leader>r :ALERename<CR>
   nmap <Leader>lj :ALENext<CR>
   nmap <Leader>lk :ALEPrevious<CR>
+
+  " goyo + limelight
+  nmap <silent> <Leader>z :Goyo 50%x90%<CR>
 
   " Run tests
   nmap <silent> <Leader>t :TestNearest<CR>
